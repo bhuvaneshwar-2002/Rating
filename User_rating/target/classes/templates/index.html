@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Hub</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+          padding: 20px;
+        }
+
+        .category-container {
+          margin-bottom: 20px;
+        }
+
+        .item-container {
+          display: flex;
+          overflow-x: auto;
+          margin-bottom: 100px;
+        }
+
+        .item {
+          position: relative;
+          flex: 0 0 auto;
+          width: 350px;
+          height: 400px;
+          background-color: #D5FFFF;
+          margin-right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 51px;
+          cursor: pointer;
+          font-size: 20px;
+
+        }
+        .ul{
+            margin-bottom:30px
+            }
+
+
+        .rate-button {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .button-container {
+          text-align: center;
+        }
+
+        .btn-view-more {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="category-container">
+        <h2>Movies &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;Web Series&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;Sports</h2>
+        <div class="item-container">
+            <div class="item" onclick="rateItem('movies', 1)">
+                <ul><li>Movie </li>
+                    <li>Movie 2</li>
+                    <li>Movie 3</li>
+                    <li>Movie 4</li>
+                    <li>Movie 5</li></ul>
+                <a href="category.html?category=movies" class="rate-button">View All Movies</a>
+            </div>
+            <div class="item" onclick="rateItem('movies', 2)">
+                <ul><li>Web Series 1</li>
+                    <li>Web Series 2</li>
+                    <li>Web Series 3</li>
+                    <li>Web Series 4</li>
+                    <li>Web Series 5</li></ul>
+                <a href="category.html?category=webseries" class="rate-button">View All Series</a>
+            </div>
+            <div class="item" onclick="rateItem('movies', 3)">
+                <ul><li>Sports 1</li>
+                    <li>Sports 2</li>
+                    <li>Sports 3</li>
+                    <li>Sports 4</li>
+                    <li>Sports 5</li></ul>
+                <a href="category.html?category=sports" class="rate-button">View All Sports</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
